@@ -72,7 +72,10 @@
           <h3 class="text-4xl font-semibold">Kitchenware</h3>
           <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-8">
             <!-- K. Accessories -->
-            <div class="bg-white p-4 rounded-lg">
+            <div
+              onclick="handleItemClick('k-accessories-price', 'k-accessories-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -109,13 +112,20 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h4 class="text-xl font-semibold">K. Accessories</h4>
-                <p class="text-xl text-gray-400">39.00 TK</p>
+                <h4 id="k-accessories-name" class="text-xl font-semibold">
+                  K. Accessories
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="k-accessories-price">39.00</span> TK
+                </p>
               </div>
             </div>
 
             <!-- Wood Accessories -->
-            <div class="bg-white p-4 rounded-lg">
+            <div
+              onclick="handleItemClick('wood-accessories-price', 'wood-accessories-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -152,13 +162,20 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h4 class="text-xl font-semibold">Wood Accessories</h4>
-                <p class="text-xl text-gray-400">25.00 TK</p>
+                <h4 id="wood-accessories-name" class="text-xl font-semibold">
+                  Wood Accessories
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="wood-accessories-price">25.00</span> TK
+                </p>
               </div>
             </div>
 
             <!-- Home Cooker -->
-            <div class="bg-white p-4 rounded-lg">
+            <div
+              onclick="handleItemClick('home-cooker-price', 'home-cooker-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -195,8 +212,12 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h4 class="text-xl font-semibold">Home Cooker</h4>
-                <p class="text-xl text-gray-400">49.00 TK</p>
+                <h4 id="home-cooker-name" class="text-xl font-semibold">
+                  Home Cooker
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="home-cooker-price">49.00</span> TK
+                </p>
               </div>
             </div>
           </div>
@@ -205,7 +226,10 @@
           <h3 class="text-4xl font-semibold mt-14">Sportswear</h3>
           <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-8">
             <!-- Sports Back Cap -->
-            <div class="bg-white p-4 rounded-lg">
+            <div
+              onclick="handleItemClick('sports-back-cap-price', 'sports-back-cap-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -242,13 +266,20 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h4 class="text-xl font-semibold">Sports Back Cap</h4>
-                <p class="text-xl text-gray-400">49.00 TK</p>
+                <h4 id="sports-back-cap-name" class="text-xl font-semibold">
+                  Sports Back Cap
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="sports-back-cap-price">49.00</span> TK
+                </p>
               </div>
             </div>
 
             <!-- Full Jersey Set -->
-            <div class="bg-white p-4 rounded-lg">
+            <div
+              onclick="handleItemClick('full-jersey-set-price', 'full-jersey-set-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -285,13 +316,20 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h4 class="text-xl font-semibold">Full Jersey Set</h4>
-                <p class="text-xl text-gray-400">69.00 TK</p>
+                <h4 id="full-jersey-set-name" class="text-xl font-semibold">
+                  Full Jersey Set
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="full-jersey-set-price">69.00</span> TK
+                </p>
               </div>
             </div>
 
-            <!-- Sports cates -->
-            <div class="bg-white p-4 rounded-lg">
+            <!-- Sports sneakers -->
+            <div
+              onclick="handleItemClick('sports-sneakers-price', 'sports-sneakers-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -303,33 +341,37 @@
                 <div class="rating rating-md">
                   <input
                     type="radio"
-                    name="Sports cates"
+                    name="Sports sneakers"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="Sports cates"
+                    name="Sports sneakers"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="Sports cates"
+                    name="Sports sneakers"
                     class="mask mask-star-2 bg-orange-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="Sports cates"
+                    name="Sports sneakers"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="Sports cates"
+                    name="Sports sneakers"
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h4 class="text-xl font-semibold">Sports cates</h4>
-                <p class="text-xl text-gray-400">159.00 TK</p>
+                <h4 id="sports-sneakers-name" class="text-xl font-semibold">
+                  Sports sneakers
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="sports-sneakers-price">159.00</span> TK
+                </p>
               </div>
             </div>
           </div>
@@ -338,7 +380,10 @@
           <h3 class="text-4xl font-semibold mt-14">Furniture</h3>
           <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-8">
             <!-- Single Relax Chair -->
-            <div class="bg-white p-4 rounded-lg">
+            <div
+              onclick="handleItemClick('single-relax-chair-price', 'single-relax-chair-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -375,13 +420,20 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h4 class="text-xl font-semibold">Single Relax Chair</h4>
-                <p class="text-xl text-gray-400">185.00 TK</p>
+                <h4 id="single-relax-chair-name" class="text-xl font-semibold">
+                  Single Relax Chair
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="single-relax-chair-price">185.00</span> TK
+                </p>
               </div>
             </div>
 
             <!-- Children play -->
-            <div class="bg-white p-4 rounded-lg">
+            <div
+              onclick="handleItemClick('children-play-price', 'children-play-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -418,13 +470,20 @@
                     checked
                   />
                 </div>
-                <h4 class="text-xl font-semibold">Children play</h4>
-                <p class="text-xl text-gray-400">299.00 TK</p>
+                <h4 id="children-play-name" class="text-xl font-semibold">
+                  Children play
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="children-play-price">299.00</span> TK
+                </p>
               </div>
             </div>
 
             <!-- Flexible Sofa -->
-            <div class="bg-white p-4 rounded-lg">
+            <div
+              onclick="handleItemClick('flexible-sofa-price', 'flexible-sofa-name')"
+              class="bg-white p-4 rounded-lg cursor-pointer"
+            >
               <div class="bg-main_background rounded-lg">
                 <img
                   class="h-52 mx-auto px-2 py-6"
@@ -461,8 +520,12 @@
                     checked
                   />
                 </div>
-                <h4 class="text-xl font-semibold">Flexible Sofa</h4>
-                <p class="text-xl text-gray-400">339.00 TK</p>
+                <h4 id="flexible-sofa-name" class="text-xl font-semibold">
+                  Flexible Sofa
+                </h4>
+                <p class="text-xl text-gray-400">
+                  <span id="flexible-sofa-price">339.00</span> TK
+                </p>
               </div>
             </div>
           </div>
@@ -476,11 +539,11 @@
               <input
                 class="border border-r-0 p-3 rounded-l-lg focus:outline-0 w-3/5"
                 type="text"
-                name=""
                 placeholder="Coupon code"
               />
               <button
-                class="font-semibold text-lg text-white bg-primary_color p-3 w-2/5 rounded-r-lg"
+                id="coupon-apply-btn"
+                class="font-semibold text-lg text-white bg-primary_color p-3 w-2/5 rounded-r-lg disabled:bg-pink-300"
                 disabled
               >
                 Apply
@@ -489,24 +552,32 @@
           </div>
           <!-- Cart Items Section -->
           <div class="bg-white rounded-lg p-5 mt-6 divide-y">
-            <div></div>
-            <div class="py-5 space-y-4">
-              <div class="flex items-center text-2xl font-medium">
+            <div
+              id="cart-items"
+              class="text-xl font-semibold py-5 space-y-4"
+            ></div>
+            <div class="text-xl font-semibold py-5 space-y-4">
+              <div class="flex items-center">
                 <h3 class="">Total Price:</h3>
-                <p class="text-gray-400"><span>00.00</span>TK</p>
+                <p class="text-gray-400">
+                  <span id="total-price">00.00</span>TK
+                </p>
               </div>
-              <div class="flex items-center text-2xl font-medium">
+              <div class="flex items-center">
                 <h3 class="">Discount:</h3>
                 <p class="text-gray-400"><span>00.00</span>TK</p>
               </div>
-              <div class="flex items-center text-2xl font-medium">
+              <div class="flex items-center">
                 <h3 class="">Total:</h3>
-                <p class="text-gray-400"><span>00.00</span>TK</p>
+                <p class="text-gray-400">
+                  <span id="grand-total">00.00</span>TK
+                </p>
               </div>
             </div>
             <div class="-mb-10 pt-6">
               <button
-                class="font-semibold text-white bg-primary_color w-full py-3 rounded"
+                id="purchase-btn"
+                class="font-semibold text-white bg-primary_color w-full py-3 rounded disabled:bg-pink-300"
                 disabled
               >
                 Make Purchase
@@ -516,5 +587,6 @@
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
