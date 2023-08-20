@@ -27,3 +27,16 @@ function getValue(valueId) {
 function setValue(valueId, amount) {
   document.getElementById(valueId).innerText = amount.toFixed(2);
 }
+
+function handleCoupon() {
+  const couponField = document.getElementById("coupon-code");
+  if (couponField.value === "SELL200") {
+    const total = getValue("total-price");
+    const discount = total * 0.2;
+    setValue("discount-amount", discount);
+
+    const grandTotal = total - discount;
+    setValue("grand-total", grandTotal);
+    couponField.value = "";
+  }
+}

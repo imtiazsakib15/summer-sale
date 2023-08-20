@@ -536,12 +536,12 @@
           <div class="bg-white rounded-lg p-5">
             <h3 class="text-2xl font-medium">Have coupon?</h3>
             <div class="flex items-center mt-4 w-full">
-              <input
+              <input id="coupon-code"
                 class="border border-r-0 p-3 rounded-l-lg focus:outline-0 w-3/5"
                 type="text"
                 placeholder="Coupon code"
               />
-              <button
+              <button onclick="handleCoupon( )"
                 id="coupon-apply-btn"
                 class="font-semibold text-lg text-white bg-primary_color p-3 w-2/5 rounded-r-lg disabled:bg-pink-300"
                 disabled
@@ -565,7 +565,7 @@
               </div>
               <div class="flex items-center">
                 <h3 class="">Discount:</h3>
-                <p class="text-gray-400"><span>00.00</span>TK</p>
+                <p class="text-gray-400"><span id="discount-amount">00.00</span>TK</p>
               </div>
               <div class="flex items-center">
                 <h3 class="">Total:</h3>
