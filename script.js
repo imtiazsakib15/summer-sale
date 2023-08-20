@@ -37,6 +37,16 @@ function handleCoupon() {
 
     const grandTotal = total - discount;
     setValue("grand-total", grandTotal);
-    couponField.value = "";
   }
+  couponField.value = "";
+}
+
+function handleGoHome() {
+  document.getElementById("cart-items").innerHTML = "";
+  setValue("total-price", 0);
+  setValue("discount-amount", 0);
+  setValue("grand-total", 0);
+  document.getElementById("coupon-code").value = "";
+  document.getElementById("purchase-btn").setAttribute("disabled", true);
+  document.getElementById("coupon-apply-btn").setAttribute("disabled", true);
 }
