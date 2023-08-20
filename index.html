@@ -25,6 +25,7 @@
           extend: {
             colors: {
               primary_color: "#E527B2",
+              main_background: "#F8F8F8",
             },
             fontFamily: {
               work_sans: "'Work Sans', sans-serif",
@@ -35,9 +36,10 @@
     </script>
   </head>
   <body class="font-work_sans">
+    <!-- Header Section -->
     <header class="bg-[#F9F6E2]">
       <div
-        class="2xl:container mx-auto text-center md:flex md:gap-5 md:items-center px-5 sm:px-20 lg:px-36 py-16"
+        class="2xl:container mx-auto text-center md:flex md:gap-5 md:items-center px-5 sm:px-20 lg:px-32 py-16"
       >
         <div class="md:w-1/2">
           <h4 class="text-xl lg:text-3xl font-medium">---SALE FEVER---</h4>
@@ -45,7 +47,7 @@
             Purchase TK 200 or above & get
             <span class="text-primary_color">20% off</span>
           </h1>
-          <div class=" text-lg lg:text-2xl mt-6 lg:mt-14">
+          <div class="text-lg lg:text-2xl mt-6 lg:mt-14">
             <span class="font-medium">Use Promo Code</span>
             <button
               class="font-semibold text-white bg-primary_color px-5 py-2 rounded ms-2 mt-4"
@@ -59,6 +61,158 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <!-- Main Section -->
+    <main class="bg-main_background">
+      <div
+        class="2xl:container lg:flex lg:gap-5 mx-auto px-5 sm:px-20 lg:px-32 py-16 lg:py-28"
+      >
+        <div class="lg:w-5/6">
+          <!-- Kitchenware Section -->
+          <h3 class="text-4xl font-semibold">Kitchenware</h3>
+          <div class="md:grid md:gap-5 md:grid-cols-2 lg:grid-cols-3 mt-8">
+            <!-- K. Accessories -->
+            <div class="bg-white p-5 rounded-lg">
+              <div class="bg-main_background rounded-lg">
+                <img
+                  class="h-52 mx-auto px-2 py-6"
+                  src="./images/prod1.png"
+                  alt="product1"
+                />
+              </div>
+              <div class="text-center space-y-2 pt-5">
+                <div class="rating rating-md">
+                  <input
+                    type="radio"
+                    name="K. Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="K. Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="K. Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="K. Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="K. Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <h4 class="text-xl font-semibold">K. Accessories</h4>
+                <p class="text-xl text-gray-400">39.00 TK</p>
+              </div>
+            </div>
+
+            <!-- Wood Accessories -->
+            <div class="bg-white p-5 rounded-lg">
+              <div class="bg-main_background rounded-lg">
+                <img
+                  class="h-52 mx-auto px-2 py-6"
+                  src="./images/prod2.png"
+                  alt="product1"
+                />
+              </div>
+              <div class="text-center space-y-2 pt-5">
+                <div class="rating rating-md">
+                  <input
+                    type="radio"
+                    name="Wood Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="Wood Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="Wood Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="Wood Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="Wood Accessories"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <h4 class="text-xl font-semibold">Wood Accessories</h4>
+                <p class="text-xl text-gray-400">25.00 TK</p>
+              </div>
+            </div>
+
+            <!-- Home Cooker -->
+            <div class="bg-white p-5 rounded-lg">
+              <div class="bg-main_background rounded-lg">
+                <img
+                  class="h-52 mx-auto px-2 py-6"
+                  src="./images/prod3.png"
+                  alt="product1"
+                />
+              </div>
+              <div class="text-center space-y-2 pt-5">
+                <div class="rating rating-md">
+                  <input
+                    type="radio"
+                    name="Home Cooker"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="Home Cooker"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="Home Cooker"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="Home Cooker"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="Home Cooker"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <h4 class="text-xl font-semibold">Home Cooker</h4>
+                <p class="text-xl text-gray-400">49.00 TK</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sportswear Section -->
+          <div>
+            <h3 class="text-4xl font-semibold">Sportswear</h3>
+          </div>
+
+          <!-- Furniture Section -->
+          <div>
+            <h3 class="text-4xl font-semibold">Furniture</h3>
+          </div>
+        </div>
+        <!-- Cart -->
+        <div class="lg:w-1/6">cart</div>
+      </div>
+    </main>
   </body>
 </html>
