@@ -4,6 +4,7 @@ function handleItemClick(itemPriceId, itemNameId) {
 
   const newTotal = itemPrice + total;
   setValue("total-price", newTotal);
+  setValue("discount-amount", 0);
   setValue("grand-total", newTotal);
 
   const purchaseBtn = document.getElementById("purchase-btn");
@@ -38,7 +39,6 @@ function handleCoupon() {
     const grandTotal = total - discount;
     setValue("grand-total", grandTotal);
   }
-  couponField.value = "";
 }
 
 function handleGoHome() {
